@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNEHASISH</title>
+    <link rel="stylesheet" href="/CSS/Style1.css">
+</head>
+
+<body>
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <img src="/Images/Snehasish-logos_white.png" class="logo" alt="Logo">
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">My Work</a></li>
+                    <li><a href="#">Conatact Me</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="header-text">
+                <p>Hello,</p>
+                <h1>I'am <span><i>Snehasish Nath </i></span></h1>
+                <h2>Web Developer</h2>
+                <p>From <span><i> India</i></span></p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div id="about">
+        <div class="row1">
+            <div class="col1">
+                <img src="/Images/me.jpg" alt="Me">
+            </div>
+            <div class="col2">
+                <h1 class="sub-title">About Me</h1>
+
+                <p>Hey there! I'm Snehasish Nath, a Web Developer driven by a passion for crafting sleek and efficient websites. My toolkit includes HTML5, CSS, Bootstrap, and JavaScript, skills I've honed through my Bachelor's in Computer Science and Engineering at IKG Punjab Technical University.</p>
+
+                <p>Intrigued by the power of data, I dived into Data Science as a trainee at Internshala, mastering predictive modeling and machine learning. I love translating complex data into actionable insights.</p>
+                <p>Python is my playground, where I design solutions that tackle real-world challenges. From crafting a fully functional Desktop Assistant to cloning Amazon's interface, I enjoy pushing the boundaries of what's possible.</p>
+                <p>When not coding, you'll find me participating in tech challenges, earning a "5 star Python Coder" badge on Hackerrank. I'm excited about the future of web development, constantly seeking ways to innovate and make a meaningful impact.</p>
+                <p>Let's create something amazing together!</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front-End Developer</span><br>Developing the user interface</li>
+                        <li><span>Back-End Developer</span><br>Developing the backend</li>
+                        <li><span>Data Analyst</span><br>Developing the user interface</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents " id="experience">
+                    <ul>
+                        <li><span>Data Science Training</span><br>Developing the user interface</li>
+                        <li><span>Back-End Developer</span><br>Developing the backend</li>
+                        <li><span>Data Analyst</span><br>Developing the user interface</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>B.Tech in CSE</span><br>Developing the user interface</li>
+                        <li><span>Back-End Developer</span><br>Developing the backend</li>
+                        <li><span>Data Analyst</span><br>Developing the user interface</li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-links");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links")
+            document.getElementById(tabname).classList.add("active-tab")
+
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
