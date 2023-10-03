@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SNEHASISH</title>
     <link rel="stylesheet" href="/CSS/Style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -15,12 +16,14 @@
             <nav>
                 <img src="/Images/Snehasish-logos_white.png" class="logo" alt="Logo">
 
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">My Work</a></li>
-                    <li><a href="#">Conatact Me</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Conatact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
 
 
@@ -67,16 +70,16 @@
                 </div>
                 <div class="tab-contents " id="experience">
                     <ul>
-                        <li><span>Data Science Training</span><br>Developing the user interface</li>
-                        <li><span>Back-End Developer</span><br>Developing the backend</li>
+                        <li><span>Data Science Trainee</span><br>Developing the user interface</li>
+                        <li><span>Python Programming Trainee</span><br>Developing the backend</li>
                         <li><span>Data Analyst</span><br>Developing the user interface</li>
 
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>B.Tech in CSE</span><br>Developing the user interface</li>
-                        <li><span>Back-End Developer</span><br>Developing the backend</li>
+                        <li><span>B.Tech - CSE</span><br>IKG Punjab Technical University (2019 - 2023)</li>
+                        <li><span>Intermediate</span><br>K.V Silchar</li>
                         <li><span>Data Analyst</span><br>Developing the user interface</li>
 
                     </ul>
@@ -93,13 +96,76 @@
 
         <div class="work-list">
             <div class="work">
-                
+                <img src="/Images/Screenshot-1.png" alt="">
+                <div class="layer">
+                    <h3>Amazon Clone</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
+                        elit. Esse fugit cupiditate omnis id accusantium eum?</p>
+                    <a href="/Amazon-clone/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="/Images/Screenshot-1.png" alt="">
+                <div class="layer">
+                    <h3>Amazon Clone</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
+                        elit. Esse fugit cupiditate omnis id accusantium eum?</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/Images/Screenshot-1.png" alt="">
+                <div class="layer">
+                    <h3>Amazon Clone</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
+                        elit. Esse fugit cupiditate omnis id accusantium eum?</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
             </div>
         </div>
+        <a href="https://github.com/Snehasish-Nath" class="btn">See More</a>
     </div>
 
 
 
+
+
+
+
+
+
+    <div id="contact">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">
+                    Contact Me
+                </h1>
+                <p><i class="fa-solid fa-paper-plane"></i><a href="mailto: snehasishnath88@gmail.com">snehasishnath88@gmail.com</a></p>
+                <p><i class="fa-solid fa-phone"></i>+91 7340876041</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-hackerrank"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="/Images/Snehasish_Resume_Web_Dev.pdf" download class="btn btn2" >Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>MADE BY - SNEHASISH NATH</p>
+        </div>
+    </div>
 
 
     <script>
@@ -117,6 +183,18 @@
             event.currentTarget.classList.add("active-links")
             document.getElementById(tabname).classList.add("active-tab")
 
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right="-200px";
         }
     </script>
 
