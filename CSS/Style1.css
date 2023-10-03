@@ -279,7 +279,7 @@ nav ul li a:hover::after{
     }
     
     .col2 p{
-        font-size: 20px;
+        font-size: 15px;
         padding: 5px 10px;
     }
     .tab-contents ul li{
@@ -391,7 +391,7 @@ nav ul li a:hover::after{
     }
 }
 
-@media screen and (max-width:380px) {
+@media screen and (max-width:780px) {
     #about{
         height: 1600px;
         width: 100%;
@@ -439,6 +439,7 @@ nav ul li a:hover::after{
     .col2 h1{
         font-size: 25px;
         padding: 0px 10px;
+        padding-bottom: 15px;
     }
     
     .col2 p{
