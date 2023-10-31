@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Righteous&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(39, 29, 29);
+}
+
+/* ----------- HOME -------------- */
+
+#home {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/Images/Background.jpg);
+
+}
+
+.nav-bar {
+    /* background-color: aqua; */
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background: linear-gradient(to right, rgb(241, 179, 179), rgb(239, 119, 119)); */
+
+}
+nav{
+    /* background-color: aliceblue; */
+    display: flex;
+    height: 50px;
+    width: 70%;
+}
+
+.col1 {
+    /* background-color: azure; */
+    height: 50px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col1 img {
+    height: 42px;
+}
+
+nav .col2 {
+    /* background-color: blue; */
+    height: 50px;
+    width: 70%;
+}
+
+.col2 ul {
+    float: left;
+    margin-left: -30px;
+}
+
+nav .col2 ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    border: 2px solid rgb(39, 29, 29);
+    /* font-family: 'Righteous', cursive; */
+}
+
+.col2 ul li:hover {
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(251, 103, 23);
+}
+
+.col2 ul li a {
+    text-decoration: none;
+    color: rgb(235, 147, 65);
+}
+
+.col3 {
+    /* background-color: lightcoral; */
+    height: 50px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box {
+    background-color: rgb(28, 33, 38);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    padding: 2.5px 5px;
+}
+
+.search-box input {
+    height: 30px;
+    width: 250px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+    /* background-color: #cac7ff; */
+    color: rgb(235, 147, 65);
+}
+
+.col3 button {
+    height: 32px;
+    width: 32px;
+    border: none;
+    margin-left: 2.5px;
+    border-radius: 60px;
+    background-color: #403e5e;
+    color: rgb(254, 166, 84);
+}
+
+.col3 button:hover {
+    background-color: #595777;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: rgb(254, 166, 84);
+}
+
+.home-main {
+    /* background-color: lightblue; */
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 45%;
+}
+
+.home-main h1 {
+    width: 100%;
+    color: rgb(230, 69, 69);
+    font-style: italic;
+}
+
+.home-main p {
+    display: flexbox;
+    text-align: right;
+    color: rgb(90, 254, 30);
+    font-weight: 700;
+}
+
+.heading {
+    font-size: 50px;
+    font-family: 'Caveat', cursive;
+    /* font-family: 'Righteous', cursive; */
+}
+
+/* ---------- main content ---------------- */
+
+#main-content{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Images/Background\ 4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------- FOR TAB SCREEN ----------- */
+
+@media screen and (max-width:1049px) {
+    nav{
+        width: 100%;
+        display: block;
+        height: 100px;
+        width: 100%;
+    }
+    .nav-bar {
+        /* background-color: aqua; */
+        height: 50px;
+        display: block;
+        width: 100%;
+        /* background: linear-gradient(to right, rgb(241, 179, 179), rgb(239, 119, 119)); */
+    
+    }
+    .col1 {
+        /* background-color: azure; */
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav .col2 {
+        /* background-color: blue; */
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .col3 {
+        /* background-color: lightcoral; */
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .col2 ul li a {
+        text-decoration: none;
+        color: rgb(65, 235, 74);
+    }
+    .home-main {
+        /* background-color: lightblue; */
+        margin-top: 15%;
+        margin-left: 5%;
+        width: 80%;
+        height: 60vh;
+        display: inline-block;
+    }
+    .home-main p {
+        color: rgb(65, 235, 74);
+
+    }
+}
+
+.col2 i{
+    display: none;
+}
+
+
+
+/* --------------- FOR PHONE -------------- */
+
+@media screen and (max-width:600px) {
+
+    #home {
+        height: 100vh;
+        width: 100%;
+        background-image: url(/Images/Background\ 3.jpg);
+        background-position: center;
+        background-size: cover;
+
+    }
+    .nav-bar{
+        height: 150px;
+    }
+    nav{
+        display: flex;
+    }
+    nav .col1 {
+        /* background-color: azure; */
+        height: 50px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav .col2{
+        width: 10%;
+    }
+    .col2 ul {
+        margin-left: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .col2 i{
+        display: block;
+        font-size: 25px;
+        color: rgb(254, 166, 84);
+    }
+    .col2 ul{
+        background: url(/Images/Background\ 2.jpg);
+        background-position: center;
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+    .col2 ul li{
+        display: block;
+        margin: 25px;
+    }
+    .col2 ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .heading {
+        font-size: 30px;
+        font-family: 'Caveat', cursive;
+        /* font-family: 'Righteous', cursive; */
+    }
+    .home-main h1 {
+        width: 100%;
+        color: rgb(230, 69, 69);
+        font-style: italic;
+        font-size: 20px;
+    }
+    
+    .home-main p {
+        display: flexbox;
+        text-align: right;
+        color: rgb(90, 254, 30);
+        font-weight: 700;
+    }
+    .home-main {
+        /* background-color: lightblue; */
+        margin-top: 5%;
+        margin-left: 15%;
+        width: 60%;
+    }
+}
