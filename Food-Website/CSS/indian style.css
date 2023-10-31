@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar{
+    background-color: lightskyblue;
+    position: relative;
+
+}
+
+.nav-items{
+    list-style: none;
+    float: left;
+}
+
+.logo-image{
+    display: inline-block;
+}
+
+.nav-list{
+    display: inline-block;
+}
+
+.nav-search{
+    display: inline-block;
+}
+
+
+.item{
+    float: left;
+}
+

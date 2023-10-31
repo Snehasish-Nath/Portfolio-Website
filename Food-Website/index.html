@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE TALKING FOODS</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        #home {
+            height: 100vh;
+            width: 100%;
+            background-image: url(Images/Background.jpg);
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        @media screen and (max-width:600px) {
+            #home{
+                background-image: url(Images/Background\ 3.jpg);
+            }
+            .col2 ul {
+                background: url(Images/Background\ 2.jpg);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Righteous&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="home">
+        <div class="nav-bar">
+            <nav>
+                <div class="col1">
+                    <img src="Images/The Talking Foods-logos_transparent.png" alt="LOGO">
+
+                </div>
+
+                <div class="col2">
+                    <ul class="nav-list" id="sidemenu">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">INDIAN MASALA</a></li>
+                        <li><a href="#">WESTERN TWIST</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+                </div>
+            </nav>
+
+            <div class="col3">
+                <form action="https://www.google.com/search" method="get" class="search-box">
+                    <input type="text" name="q" placeholder="Search">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="home-main">
+            <h1 class="heading">THE TALKING FOODS</h1>
+            <h1>
+                "The only way to get rid of a temptation is to yield to it."
+            </h1>
+            <p>- Oscar Wilde</p>
+        </div>
+    </div>
+
+
+    <div id="main-content">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>
