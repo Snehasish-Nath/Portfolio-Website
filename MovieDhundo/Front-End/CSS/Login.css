@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/Front-End/Images/Sonic-Desktop-Background.jpg);
+    background-position: center;
+    background-size: cover;
+    
+
+}
+@media screen and (max-width:600px) {
+    body{
+        background-image: url(/Front-End/Images/Phone-BAckground.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    #Re p{
+        color: white;
+    }
+    #button{
+        color: white;
+    }
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.main1{
+    height: 500px;
+    width: 350px;
+    border: 2px solid rgb(37, 42, 140);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px blue;
+}
+.main1:hover{
+    box-shadow: 0px 0px 40px blue;
+
+}
+
+.part1{
+    height: 15%;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.part2{
+    height: 70%;
+    width: 350px;
+}
+
+.form1{
+    height: 25%;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#Username{
+    background: transparent;
+    padding: 10px;
+    border-radius: 30px;
+    width: 280px;
+    font-size: 1rem;
+}
+#Username:hover{
+    box-shadow: 0px 0px 10px gray;
+}
+
+#Password{
+    background: transparent;
+    padding: 10px;
+    border-radius: 30px;
+    width: 280px;
+    font-size: 1rem;
+}
+#Password:hover{
+    box-shadow: 0px 0px 10px gray;
+}
+
+.form2{
+    height: 25%;
+    width: 350px;
+    display: flex;
+    align-items: center;
+}
+
+#dd{
+    width: 10%;
+    font-size: 20px;
+}
+#ch{
+    margin-left: 26px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#Re{
+    width: 50%;
+}
+#Re p{
+    margin: 0;
+    margin-left: 10px;
+    cursor: default;
+}
+#fp{
+    width: 40%;
+}
+#fp a{
+    margin-left: 6px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#fp a:hover{
+    color: rgb(177, 174, 174);
+}
+
+
+#button{
+    background: transparent;
+    padding: 10px;
+    border-radius: 30px;
+    width: 180px;
+    font-size: 1rem;
+    border: 1px solid rgb(11, 11, 72);
+}
+#button:hover{
+    cursor: pointer;
+    color: rgb(53, 53, 180);
+    border: none;
+    border-top: 2px solid rgb(11, 11, 72);
+    border-bottom: 2px solid rgb(11, 11, 72);
+    background-color: rgb(145, 164, 197);
+    box-shadow: 0px 0px 10px rgb(2, 2, 33);
+}
+
+
+.part3{
+    height: 15%;
+    width: 350px;
+}
