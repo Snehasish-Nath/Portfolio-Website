@@ -71,7 +71,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 2px;
-    background: #fff685;
+    background: #4251c0f2;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -309,7 +309,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff1d58;
+    background: #4a32e6;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -328,7 +328,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: #a1143a;
+    color: #aa17b5;
     font-size: 15px;
 }
 
@@ -505,7 +505,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0px;
-    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6),#0062ff);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -529,7 +529,7 @@ nav ul li a:hover::after{
 
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: #0062ff;
     text-decoration: none;
     font-size: 18px;
     line-height: 50px;
@@ -556,7 +556,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #0062ff;
     padding: 10px 40px;
     border-radius: 6px;
     text-decoration: none;
@@ -566,7 +566,7 @@ nav ul li a:hover::after{
 }
 
 .btn:hover{
-    background: #ff004f;
+    background: #3d67ab;
     
 }
 /* --------------- */
@@ -606,12 +606,12 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .contact-left p a:hover{
-    color: #ff004f;
+    color: ##0062ff;
     transform: translateY(-5px);
 }
 
 .contact-left p i{
-    color: #ff004f;
+    color: #0062ff;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -629,12 +629,12 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color: #0062ff;
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: #0062ff;
     font-size: 15px;
 }
 
