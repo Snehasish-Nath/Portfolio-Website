@@ -606,7 +606,7 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .contact-left p a:hover{
-    color: ##0062ff;
+    color: #0062ff;
     transform: translateY(-5px);
 }
 
@@ -701,11 +701,13 @@ nav .fa-solid{
         color: #ffffff;
     }
     nav ul{
-        background: #242022;
+        background-image: url(/Images/background\ 6.jpg);
+        background-position: center;
+        background-size: contain;
         position: fixed;
         top: 0;
         right: -200px;
-        width: 200px;
+        width: 160px;
         height: 50vh;
         padding-top: 50px;
         z-index: 2;
