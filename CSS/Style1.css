@@ -703,7 +703,7 @@ nav .fa-solid{
     nav ul{
         background-image: url(/Images/background\ 6.jpg);
         background-position: center;
-        background-size: contain;
+        background-size: cover;
         position: fixed;
         top: 0;
         right: -200px;
